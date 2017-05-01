@@ -26,8 +26,6 @@ def makeD(lis):
 event = makeD(listify(readIt("event.csv")))
 hours = getListOfIDs(listify(readIt("hours.csv")))
 
-print hours
-
 for ID in hours:
     ID = ID.strip()
     if ID in event.keys():
